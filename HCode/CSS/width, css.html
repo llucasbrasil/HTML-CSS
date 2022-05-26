@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando</title>
+    <style type="text/css">
+
+    body{
+        margin:50px; 
+        padding: 0;
+    }
+    .fundo{
+        /* width: 100vw; */
+        height: 100vh;
+    }
+    .fundo > div[class^=largura]{
+        border-style: solid;
+        border-width: 2px;
+        margin-bottom: 3%;
+        height: 40px;
+        overflow: hidden;/*ocutar conteudo se ocorrer algum estouro*/
+    }
+    .largura-auto{
+        width: auto;
+        border-color: #00598daa;
+    }
+    .largura-vwvh{
+        width: 50vw;
+        border-color: #008d44aa;
+    }
+    .largura-percent{
+        width: 50%;
+        border-color: #eb6767aa;
+    }
+    .largura-pixel{
+        width: 450px;
+        border-color: #0025d3aa;
+    }
+    .largura-fit{
+        width: fit-content;
+        border-color: #c2f01caa;
+    }
+    .largura-min{
+        width: min-content;
+        border-color: #2ac3c8aa;
+    }
+    .largura-max{
+        width: max-content;
+        border-color: #7c2ac8aa;
+    }
+    .largura-revert{
+        width: revert;
+        border-color: #c82a2aaa;
+    }
+    .largura-unset{
+        width: unset;
+        border-color: violet;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="fundo">
+        <div class="largura-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nihil, nobis cumque quas alias dicta facere, aliquam delectus, nisi iste veritatis ea cupiditate distinctio odio necessitatibus ullam soluta. Quisquam, ipsum!</div>
+        <div class="largura-vwvh">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nihil, nobis cumque quas alias dicta facere, aliquam delectus, nisi iste veritatis ea cupiditate distinctio odio necessitatibus ullam soluta. Quisquam, ipsum!</div>
+        <div class="largura-percent">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nihil, nobis cumque quas alias dicta facere, aliquam delectus, nisi iste veritatis ea cupiditate distinctio odio necessitatibus ullam soluta. Quisquam, ipsum!</div>
+        <div class="largura-pixel">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nihil, nobis cumque quas alias dicta facere, aliquam delectus, nisi iste veritatis ea cupiditate distinctio odio necessitatibus ullam soluta. Quisquam, ipsum!</div>
+        <div class="largura-fit">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nihil, nobis cumque quas aedfgdsgds</div>
+        <div class="largura-min">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nihil, nobis cumque quas aedfgdsgds</div>
+        <div class="largura-max">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nihil, nobis cumque quas aedfgdsgds</div>
+        <div class="largura-revert">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nihil, nobis cumque quas aedfgdsgds</div>
+        <div class="largura-unset">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nihil, nobis cumque quas aedfgdsgds</div>
+
+    </div>
+
+</body>
+</html>

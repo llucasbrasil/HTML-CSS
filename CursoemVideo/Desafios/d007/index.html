@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/Martin-Berube-Square-Animal-Dog.ico" type="image/x-icon">
+    <title>Imagens flexíveis</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você está vendo a imagem de um de alguns dogs, certo? Pois um detalhe que não posso deixar passar despercebido, experimente diminuir o tamanho de sua janela. &#x1F606;
+    </p>
+    <picture>
+        <source media="(max-width:450px )" srcset="assets/5ok.jpg" type="image/jpeg">
+        <source media="(max-width:650px )" srcset="assets/4ok.jpg" type="image/jpeg">
+        <source media="(max-width:850px )" srcset="assets/3ok.jpg" type="image/jpeg">
+        <source media="(max-width:1050px )" srcset="assets/2ok.jpg" type="image/jpeg">
+        <img src="assets/1ok.jpg" alt="dogs">
+    </picture>
+</body>
+</html>

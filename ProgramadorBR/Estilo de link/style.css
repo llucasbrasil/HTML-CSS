@@ -1,0 +1,41 @@
+.links:link{
+    
+    text-decoration: none;
+    color: rgb(28, 5, 156);
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border: 2px solid #5747b8;*/
+}
+
+.links:hover{
+    background: slateblue;
+    color: white;
+}
+
+/*
+.links:active{
+    background: slateblue;
+    color: white;
+}*/
+
+
+.links:visited{
+    color:rgb(189, 188, 188)
+
+}
+/*
+.links{
+
+    background: #B1B1B1;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    border-width: 4px;
+    border-style: solid;
+    border-top-color: #DFDFDF;
+    border-right-color: #666;
+    border-bottom-color: #333;
+    border-left-color: #858585;
+}*/

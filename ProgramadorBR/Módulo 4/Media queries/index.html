@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Intermediário</title>
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: rgb(238, 170, 130);
+            overflow: hidden;
+            /*especifica quando o conteúdo de um elemento de nível de 
+            bloco deve ser cortado, exibido com barras de rolagem ou se transborda do 
+            elemento*/
+            margin: auto;
+            /*deixa conteudo centralizado*/
+            width: 80%;
+            /*cria um 'afastamento' nas laterias de 80%*/
+            padding: 15px;
+            /*deixa conteudo com o 'corpo maior'*/
+            font-size: 18px;
+            color: whitesmoke;
+        }
+
+        .menu {
+            list-style: none;
+            /*retira os pontos da lista*/
+            margin: 0;
+            /*retira a margin da lista*/
+            padding: 0;
+            /*retira o espaço do paragrafo da lista*/
+            float: right;
+            /*joga a lista para o final da linha*/
+        }
+
+        li {
+            /* display: inline-block;deixa a lista em apenas uma linha, pode usar esse ou float*/
+            margin-left: 15px;
+            /* coloca um espaço entre os itens da lista*/
+            float: left;
+            /*deixa a lista em apenas uma linha */
+            border: thin silver solid;
+            padding:0px 4px 0px 4px ;
+        }
+
+        .logo {
+            float: left;
+            /*deixa a lista em apenas uma linha*/
+        }
+
+        @media screen and (max-width: 500px) {
+            .logo {
+                float: none;
+                text-align: center;
+                margin-bottom: 10px;/*deixa a logo com espaço maior em relação ao menu*/
+            }
+
+            .menu {
+                float: none;
+                text-align: center;
+            }
+
+            li {
+                float: none;
+                /* background: red; */
+                border: thin silver solid;
+                margin: 5px;/* deixa uma margin em todos os lados, centralizando melhor*/
+                padding: 8px;/*deixa os botoes mais largos, facilitando para utilizar 
+                touchscreen*/
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            Logo
+        </div>
+        <ul class="menu">
+            <li>Home</li>
+            <li>Cursos</li>
+            <li>Contato</li>
+            <li>Escritório</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+.borda{
+    /* border: 5px solid red; pode ser posto assim */
+    border-width: 3px 10px 10px 3px; /*grossura nas bordas */
+    border-radius: 2px;
+    border-color: silver rgb(150, 150, 150) rgb(46, 46, 46) rgb(165, 165, 165) ;
+    border-style: solid;
+    padding: 5px; /* espaço entre o texto e a primeira borda*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.658) ; /*sombra no texto*/
+    color: rgb(78, 78, 78);
+    text-align: center;
+    letter-spacing: 20px;
+
+
+}
+.quadrado{/*redondo amarelo */
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+
+}

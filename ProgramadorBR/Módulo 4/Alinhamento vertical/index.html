@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        body{
+            font-size: 1.2rem;/*defini tamanho da escrita*/
+        }
+        .card{
+            float: left;/*deixar conteudo um ao lado do outro*/
+            width: 400px;
+            height: 200px;
+            border: 2px solid gray;
+            text-align: center;/*texto centralizado no meio*/
+            position: relative;
+        }
+        .card2{
+            float: left;
+            border: 2px solid gray;
+            clear: left;/*passa o conteudo para baixo */
+            padding-left: 136.7px;
+            padding-right: 136.7px;
+            padding-top: 88.8px;
+            padding-bottom: 88.8px;
+        }
+        .card3{
+            border: 2px solid gray;
+            float:left;
+            padding-left: 136.7px;
+            padding-right: 136.7px;
+            padding-top: 88.8px;
+            padding-bottom: 88.8px;
+        }
+        .c1{
+            /* background-color: red; */
+            line-height: 200px;/*preenche o tamanho do .card, com fundo +
+            texto alinhado ao centro*/
+        }
+        .c2{
+            /* background-color: royalblue; */
+            position: absolute;
+            top: 50%;
+            left: 50%;/*correção de posição do texto*/
+            transform: translate(-50%, -50%);/*correção de posição do texto*/
+        }
+    </style>
+
+</head>
+<body>
+    <div class="card">
+        <div class="c1">Lucas Brasileiro</div>
+    </div>
+    <div class="card">
+        <div class="c2">Lucas Brasileiro</div>
+    </div>99
+    <div>
+        <div class="card2">Lucas Brasileiro</div>
+    </div>
+    <div>
+        <div class="card3">Lucas Brasileiro</div>
+    </div>
+</body>
+</html>

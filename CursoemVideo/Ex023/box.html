@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header,nav,main,section,article,aside,footer{
+            border: 3px solid black;
+            margin: 10px;
+        }
+        header{
+            width: 800px;
+            height: 100px;
+        }
+        nav{
+            height: 40px;
+            margin-top: 30px;
+        }
+        main{
+            width: 800px;
+            height: 800px;
+            display: flex;
+        }
+        section{
+            width: 510px;
+            height: 750px;
+            margin-top: 30px;
+            margin-left: -10px;
+        }
+        #asibottom{
+            color: red;
+            width: 210px;
+            height: 750px;
+            margin-top: 30px;
+        }
+        #arttop{
+            height: 340px;
+        }
+        #artbottom{
+            height: 340px;
+            display: flex;
+        }
+        #asiright{
+            color: red;
+            width: 100px;
+            height: 300px;
+            margin-left: auto ;
+        }
+        footer{
+            width: 800px;
+            height: 100px;
+        }
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <header>header
+        <nav>nav</nav>
+    </header>
+    <main>main
+
+        <section>section
+            <article id="arttop">article top</article>
+            <article id="artbottom">article bottom
+                <aside id="asiright">aside right</aside>
+            </article>
+        </section>
+        <aside id="asibottom">aside bottom</aside>
+   
+    </main>
+    <footer>footer</footer>
+
+
+    
+</body>
+</html>

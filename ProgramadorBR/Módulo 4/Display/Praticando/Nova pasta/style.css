@@ -1,0 +1,162 @@
+body, ul, li, p{
+    margin: 0;
+    padding: 0;
+    list-style: none; /* retira o stili da "li"*/
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin-bottom: 100px;
+}
+#logo{
+    padding-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: blanchedalmond;
+
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding: 20px;
+    align-items: center;
+    background-color: black;
+}
+
+.menu{
+    display: flex;
+}
+.menu li{
+    margin-left: 18px;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+}
+
+
+/*css flexbox*/
+
+h1{
+    text-align: center;
+}
+
+img{
+    max-width: 100%;/*img, não passa do tamanho da janela*/
+    display: block;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap; /* dividir para baixo*/
+    max-width: 800px;
+    margin: auto;
+}
+.flex > div{
+    flex: 1 1 200px;/* com quantos px conteudo quebra*/
+    margin: 10px;
+    background-color: cornsilk;
+}
+.flex > div:nth-child(n+5) {
+    background-color: rgb(148, 175, 226);
+    text-align: center;
+    
+}
+
+
+/*CSS Grid 1*/
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*dividir em coluna*/
+    margin: auto;
+    padding: 10px;/*nao deixa os itens ficar colados na tela*/
+    max-width:800px;/*para usar exempro abaixo 
+    precisamos retormar para 800px*/
+    grid-gap: 20px;/*não é mais utilizado, melhor usar  
+    exempro abaixo*/
+}
+.grid1 > div:nth-child(n+4) {/*modificar apenas itens 4 até anuncio*/
+    /* margin: 10px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;/* define a quantidade de colunas*/
+    grid-gap:10px;/*espaço entre os itens*/
+    align-items: center;
+}
+
+.grid1 > div.anuncio{
+    grid-column: 1;
+    grid-row: 2/5;
+    display: block;
+    margin-top: 15px;/* correção no tamanho*/
+}
+@media (max-width:600px){
+    .grid1{
+        grid-template-columns: repeat(2, 1fr);/*fica com apenas
+        com duas colunas ao diminuir a janela*/
+    }
+    .grid1 > div:nth-child(n+4){
+        display: block;
+    }
+    .grid1 > div.anuncio{
+        grid-column: auto;
+        grid-row: auto;
+        order: -1;/*deixar o anuncio em primeiro
+        da lista*/
+    }
+}
+
+/*CSS Grid 2*/
+
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    /* margin-right: 10px; */
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.video{
+    margin-right: 15px;
+}
+.sidebar > div{
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width:600px) {
+    .grid2{
+        grid-template-columns: 1fr;
+    }
+    .sidebar{
+        /* display: grid;                  OPÇÃO 1 -> ou
+        grid-template-columns: repeat(2, 1fr) */
+
+        display: flex;
+        overflow: scroll;
+    }
+    .sidebar > div {
+        margin:0 10px;
+        flex:1 0 200px;
+    }
+}
+/* SECTION GRID 3 */
+
+.grid3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-gap: 20px; */
+    /* margin: 0 auto; */
+
+    max-width: 800px;
+    /* padding: 10px; */
+
+}
+.grid3item:nth-child(1){
+    grid-row: 1 / 3;
+
+}
+.grid3 > div{
+    margin: 10px;
+}

@@ -1,0 +1,13 @@
+p{
+    color: red;
+     text-align: justify; /*posição do texto na pagina */
+     text-transform:uppercase ; /*texto todo em caixa alta */
+     text-indent: 36px;/* espaço para inicio de paragrafo */
+     text-decoration:overline; /*algum tipo de risco no texto */
+     letter-spacing: 10px; /*espaço entre as letras */
+     line-height: 30px; /*espaço entre as linhas  */
+     text-shadow: 2px 2px 5px black;/* para fazer sombra nas letras  */
+}
+a{
+    text-decoration: none;  /*link sem risco no texto  */
+}
