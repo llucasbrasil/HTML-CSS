@@ -15,7 +15,7 @@ Estou aprendendo a criar sites e agora vou gerenciar os meus repositórios!
 </ul>
 <ul>
   <li>
-  <ol>Exercícios do <a href="https://www.youtube.com/watch?v=t8TMQPS_7sc&list=PL-u8JWLN6xasK6rdmAu4YYofbKVashSVT">HCode</a>
+  <ol type="1">Exercícios do <a href="https://www.youtube.com/watch?v=t8TMQPS_7sc&list=PL-u8JWLN6xasK6rdmAu4YYofbKVashSVT">HCode</a>
     <li> <em>em construção</em> </li>
     <li></li>
     <li></li>
@@ -25,7 +25,7 @@ Estou aprendendo a criar sites e agora vou gerenciar os meus repositórios!
 </ul>
 <ul>
   <li>
-  <ol>Exercícios do <a href="https://programadorbr.com/">ProgramadorBR</a>
+  <ol type="1">Exercícios do <a href="https://programadorbr.com/">ProgramadorBR</a>
     <li> <em>em construção</em> </li>
     <li></li>
     <li></li>
