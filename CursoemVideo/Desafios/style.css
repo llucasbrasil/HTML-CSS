@@ -57,7 +57,7 @@ p{
 }
 
 .heart:after{
-    content: 'click';
+    content: 'click me';
     
     color: white;
 
