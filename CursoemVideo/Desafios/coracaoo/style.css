@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -18,7 +21,7 @@ body{
 p{
     color: white;
     /* display: block; */
-    font: 1em/1.1em Arial, Helvetica, sans-serif;
+    font: 1em/1.1em 'Loved by the King', cursive;
     text-indent: 20px;
 }
 
@@ -40,7 +43,7 @@ p{
     background-color: #F93D3D;
     transform-origin: right bottom;
     border-radius: 15px;
-    
+    font-family: 'Loved by the King', cursive;
     transition: .5s ease;
 
 }
