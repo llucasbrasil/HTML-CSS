@@ -6,20 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhamento vertival</title>
     <style>
+        *{margin: 0;}
         #container{
+            position: relative; /* posiçao referente a relaçao desse bloco*/
             height: 500px;
+            width: 90vw;
+            margin: auto;
             padding: 10px;
             background-color: #a1a;
-            position: relative;
+
+
         }
         #conteudo{
+            position: absolute; /* posição absoluta sobre a relativa */
             height: 200px;
             width: 400px;
             background-color: #cc2;
-            /* margin: 50vh auto; */
-            position: absolute;
+
             left: 50%;
-            top: 50%;
+            top: 10%;
             transform: translate(-50%,-50%);
 
         }
