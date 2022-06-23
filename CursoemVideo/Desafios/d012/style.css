@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Passion One';
+    src: url(fonts/PassionOne-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Sriracha';
+    src: url(fonts/Sriracha-Regular.ttf) format('truetype');
+}
+
+:root {
+    --font-primary: 'Passion One', sans-serif;
+    --font-second: 'Sriracha', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*===============>>FONTES<<================*/
+
+.primaryfont {
+    font-family: var(--font-primary);
+}
+.secondfont {
+    font-family: var(--font-second);
+}
+
+/*===============>>GERAL<<================*/
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+   text-decoration: underline; 
+}
+section > p {
+    margin: 10px;
+}
+
+/*===============>>BODY<<================*/
+
+
+header.cabecalho {
+    background-color: #000;
+    text-align: center;
+    color: #FFF;
+}
+header.cabecalho > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 3em;
+    font-weight: 100;   
+}
+header.cabecalho > p {
+    padding-bottom: 50px;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+section.normal { 
+    background-color: #FFF;
+    color: #000;
+}
+section.imagem { 
+    background-color: #444;
+    color: #FFF;
+}
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.293);
+}
+
+
+
+
+/*===============>>RODAPE<<================*/
+
+footer {
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+}
