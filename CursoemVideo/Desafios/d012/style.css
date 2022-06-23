@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 @font-face {
     font-family: 'Passion One';
     src: url(fonts/PassionOne-Regular.ttf) format('truetype');
@@ -10,8 +9,9 @@
 }
 
 :root {
-    --font-primary: 'Passion One', sans-serif;
-    --font-second: 'Sriracha', sans-serif;
+    --font-primary: 'Passion One', cursive;
+    --font-second: 'Sriracha', cursive;
+    --font-third: Verdana, Geneva, Tahoma, sans-serif;
 }
 * {
     margin: 0;
@@ -19,16 +19,23 @@
     box-sizing: border-box;
 }
 
-/*===============>>FONTES<<================*/
 
+/*===============>>FONTES<<================*/
 .primaryfont {
     font-family: var(--font-primary);
 }
 .secondfont {
     font-family: var(--font-second);
 }
+.thirdfont {
+    font-family: var(--font-third);
+}
+
 
 /*===============>>GERAL<<================*/
+body {
+    font-family: var(--font-third);
+}
 
 a {
     color: #FFF;
@@ -38,13 +45,9 @@ a {
 a:hover {
    text-decoration: underline; 
 }
-section > p {
-    margin: 10px;
-}
-
-/*===============>>BODY<<================*/
 
 
+/*===============>>CABECA<<================*/
 header.cabecalho {
     background-color: #000;
     text-align: center;
@@ -52,20 +55,33 @@ header.cabecalho {
 }
 header.cabecalho > h1 {
     padding-top: 50px;
+    font: 8.5vw var(--font-primary);
     font-variant: small-caps;
-    font-size: 3em;
-    font-weight: 100;   
+}
+@media (min-width:800px) {
+    header.cabecalho > h1 {
+        font-size: 6vw;
+    }
 }
 header.cabecalho > p {
     padding-bottom: 50px;
 }
 
+
+/*===============>>CORPO<<================*/
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font: 2.8vw var(--font-second);
 }
+@media (min-width:800px) {
+    section {
+        font-size: 1.8vw;
+    }
+}
+
 section.normal { 
     background-color: #FFF;
     color: #000;
@@ -83,7 +99,6 @@ section.imagem > p {
 
 
 /*===============>>RODAPE<<================*/
-
 footer {
     background-color: #000;
     color: #FFF;
