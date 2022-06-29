@@ -12,32 +12,81 @@
             padding: 0;
             box-sizing: border-box;
         }
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 10px;
+            color: #555;
+        }
         section {
             max-width: 1000px;
-            margin: auto;
+            margin: 20px auto;
             /* background-color: rgb(37, 37, 114); */
         }
         table {
-            width: 80%;
-            max-width: 800px;
+            /* width: 80%; */
+            width: 650px;
             border-collapse: collapse;
             margin: auto;
             /* color: #fff; */
 
         }
         th,td {
-            border: 1px solid silver;
+            border: .5px solid silver;
             padding: 8px;
             text-align: center;
             vertical-align: middle;
         }
-        .tablenone {
+        th {
+            text-transform: uppercase;
+            font-weight: 100;
+            color: #888;
+        }
+
+        .tabelanone {
             border: 0;
         }
-        .textalign {
+        .alinhamentotexto {
             text-align: left;
             vertical-align: middle;
         }
+        .linhadestaque {
+            padding:20px;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .linhadestaque1 {
+            background-color:#7EBFF2;
+            color: #fff;
+        }
+        .linhadestaque2 {
+            background-color:#4A87EC;
+            color: #fff;
+        }
+        .linhadestaque3 {
+            background-color:#7073EC;
+            color: #fff;
+        }
+        .a1,.a2,.a3 {
+            border: none;
+            border-radius: 5px;
+            padding: 8px;
+            font-size: 10px;
+            text-decoration: none;
+        }
+        .a1:hover {
+            background-color: #71adda;
+        }
+        .a2:hover {
+            background-color:#3e74ca ;
+        }
+        .a3:hover {
+            background-color:#5f61c9;
+        }
+
+        .linhadestaquelink {
+            padding: 12px;
+        }
+    
 
     </style>
 </head>
@@ -46,46 +95,46 @@
     
         <table>
             <tr>
-                <th class="tablenone">&nbsp;</th>
+                <th class="tabelanone">&nbsp;</th>
                 <th>básico</th>
                 <th>padrão</th>
                 <th>avançado</th>
             </tr>
             <tr>
-                <td class="textalign">Preço mensal</td>
-                <td>$ 29</td>
-                <td>$ 59</td>
-                <td>$ 139</td>
+                <td class="alinhamentotexto">Preço mensal</td>
+                <td class="linhadestaque linhadestaque1">$ 29</td>
+                <td class="linhadestaque linhadestaque2">$ 59</td>
+                <td class="linhadestaque linhadestaque3">$ 139</td>
             </tr>
             <tr>
-                <td class="textalign">Comercial</td>
+                <td class="alinhamentotexto">Comercial</td>
                 <td>1 usuário completo</td>
                 <td>5 usuários completos</td>
                 <td>Usuários personalizados</td>
             </tr>
             <tr>
-                <td class="textalign">Usuários ilimitados somente leitura</td>
+                <td class="alinhamentotexto">Usuários ilimitados somente leitura</td>
                 <td>1.000 visualizações de email</td>
                 <td>2.000 visualizações de email</td>
                 <td>Visualizações de email personalizados</td>
             </tr>
             <tr>
-                <td class="textalign">Contatos</td>
+                <td class="alinhamentotexto">Contatos</td>
                 <td>5 contatos por cliente</td>
                 <td>25 contatos por cliente</td>
                 <td>Contatos ilimitados</td>
             </tr>
             <tr>
-                <td class="textalign">Café</td>
+                <td class="alinhamentotexto">Café</td>
                 <td>5 xícaras</td>
                 <td>8 xícaras</td>
                 <td>10 xícaras</td>
             </tr>
             <tr>
-                <td class="tablenone">&nbsp;</td>
-                <td><button>escolha o plano</button></td>
-                <td><button>escolha o plano</button></td>
-                <td><button>escolha o plano</button></td>
+                <td class="tabelanone">&nbsp;</td>
+                <td class="linhadestaquelink"><a href="#" class="linhadestaque1 a1">escolha o plano</a></td>
+                <td class="linhadestaquelink"><a href="#" class="linhadestaque2 a2">escolha o plano</a></td>
+                <td class="linhadestaquelink"><a href="#" class="linhadestaque3 a3">escolha o plano</a></td>
             </tr>
         </table>
 </section>
