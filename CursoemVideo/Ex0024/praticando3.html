@@ -39,6 +39,7 @@
             letter-spacing:.05em;/*aumentar o espaço entre as letras*/
             /* text-indent: 10px; */
             line-height: 1.3em;
+            padding: 0 20px;
         }
 
         .ul-principal {
@@ -48,7 +49,7 @@
             max-width: 800px;
             margin: 50px auto;
         }
-        @media (max-width:760px) {
+        @media (max-width:750px) {
             .ul-principal {
                 flex-wrap: wrap;/*fazer quebra automatica de listas para espaço abaixo*/
             }
@@ -60,12 +61,12 @@
             padding: 15px 20px;
             width: 100%; /*istas ocuparem todo espaço e ficarem coladas uma na outra*/
         }
-        @media (max-width:760px) {
+        @media (max-width:750px) {
             .li-principal {
                 max-width: 100%;
             }
-        }
 
+        }
 
         .li-principal > div {
             display: flex;/*deixar os itens um ao lado do outro*/
@@ -93,7 +94,6 @@
             text-shadow: 0 0 10px rgba(0, 0, 0, 0.200);
         }
 
-
         .fa-ul {
             height: 150px;
         }
@@ -105,11 +105,19 @@
         #li-destaque {
             background-color: #545bc4;
             border: 0;
-            box-shadow: inset 0px 20px 44px -13px rgba(0, 0, 0, 0.31);
+            box-shadow: inset 0px 20px 44px rgba(0, 0, 0, 0.300);
             color: #fff;
             position: relative;
             transform: scale(1.1);
         }
+        @media (max-width:750px) {
+            #li-destaque {
+                transform: scale(1.05);
+                margin: 10px 0;
+                box-shadow: inset 0px 20px 44px 10px rgba(0, 0, 0, 0.200), 0 0 3px rgba(0, 0, 0, 0.300);
+            }
+        }
+
         #li-destaque .botao {
             border-color: #fff;
             color: #fff;
