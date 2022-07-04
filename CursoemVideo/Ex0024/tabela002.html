@@ -5,6 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        } 
+        h1 {
+            text-align: center;
+            padding: 30px 0 20px;
+        }
+
+        table {
+            background-color: #FFF8DC;            
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #AAA;
+            text-align: center;
+            padding: 7px;
+            min-width: 90px;
+        }
+
+        thead, tfoot {
+            background-color: #B0E0E6;
+        }
+
+        .estados {
+            text-align: left;
+            font-size: .9em;
+
+        }
+        .textocolorblue {
+            color: #0645AD;
+        }
+        .bandeira {
+            
+        }
+
+
+
+
+
+
+    </style>
 </head>
 <body>
         <!-- 
@@ -17,87 +64,96 @@
      -->
     
     <h1>Densidade demográfica no Brasil</h1>
-    <table>
-        <thead>
+    <article>
+        <table>
+            <thead>
+                <tr>
+                    <th><strong>Região</strong></th>
+                    <th><strong>Estado</strong></th>
+                    <th><strong>Municípios</strong></th>
+                    <th><strong>População (2021)</strong></th>
+                    <th>%</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="textocolorblue"><strong>Região Norte</strong></th>
+                    <td class="estados  textocolorblue">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Bandeira_do_Acre.svg/20px-Bandeira_do_Acre.svg.png" alt="bandeira"> Acre <br>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Bandeira_do_Amap%C3%A1.svg/20px-Bandeira_do_Amap%C3%A1.svg.png" alt="bandeira"> Amapá <br>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bandeira_do_Amazonas.svg/20px-Bandeira_do_Amazonas.svg.png" alt="bandeira"> Amazonas <br>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bandeira_do_Par%C3%A1.svg/20px-Bandeira_do_Par%C3%A1.svg.png" alt=""> Pará <br>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Bandeira_de_Rond%C3%B4nia.svg/20px-Bandeira_de_Rond%C3%B4nia.svg.png" alt="bandeira"> Rondônia <br>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Bandeira_de_Roraima.svg/20px-Bandeira_de_Roraima.svg.png" alt="bandeira"> Roraima <br>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bandeira_do_Tocantins.svg/20px-Bandeira_do_Tocantins.svg.png" alt="bandeira"> Tocantins 
+                    </td>
+                    <td>450</td>
+                    <td>18 906 962</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Progress_bar_10.svg/35px-Progress_bar_10.svg.png" alt="porcentagem"> 9%</td>
+                </tr>
+                <tr>
+                    <th class="textocolorblue"><strong>Região Nordeste</strong></th>
+                    <td class="estados  textocolorblue">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bandeira_de_Alagoas.svg/20px-Bandeira_de_Alagoas.svg.png" alt="bandeira"> Alagoas <br>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bandeira_da_Bahia.svg/20px-Bandeira_da_Bahia.svg.png" alt="bandeira"> Bahia <br>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bandeira_do_Cear%C3%A1.svg/20px-Bandeira_do_Cear%C3%A1.svg.png" alt="bandeira"> Ceará <br>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Bandeira_do_Maranh%C3%A3o.svg/20px-Bandeira_do_Maranh%C3%A3o.svg.png" alt="bandeira"> Maranhão <br>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bandeira_da_Para%C3%ADba.svg/20px-Bandeira_da_Para%C3%ADba.svg.png" alt="bandeira"> Paraíba <br>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Bandeira_de_Pernambuco.svg/20px-Bandeira_de_Pernambuco.svg.png" alt="bandeira"> Pernambuco <br>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Bandeira_do_Piau%C3%AD.svg/20px-Bandeira_do_Piau%C3%AD.svg.png" alt="bandeira"> Piauí <br>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bandeira_do_Rio_Grande_do_Norte.svg/20px-Bandeira_do_Rio_Grande_do_Norte.svg.png" alt="bandeira"> Rio Grande do Norte <br>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Bandeira_de_Sergipe.svg/20px-Bandeira_de_Sergipe.svg.png" alt="bandeira"> Sergipe
+                    </td>
+                    <td>1 793</td>
+                    <td>57 667 842</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Progress_bar_30.svg/35px-Progress_bar_30.svg.png" alt="porcentagem"> 27%</td>
+                </tr>
+                <tr>
+                    <th class="textocolorblue"><strong>Região Centro-Oeste</strong></th>
+                    <td class="estados textocolorblue">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Bandeira_do_Distrito_Federal_%28Brasil%29.svg/20px-Bandeira_do_Distrito_Federal_%28Brasil%29.svg.png" alt="bandeira"> Distrito Federal <br>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Goi%C3%A1s.svg/20px-Flag_of_Goi%C3%A1s.svg.png" alt="bandeira"> Goiás <br>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bandeira_de_Mato_Grosso.svg/20px-Bandeira_de_Mato_Grosso.svg.png" alt="bandeira"> Mato Grosso <br>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bandeira_de_Mato_Grosso_do_Sul.svg/20px-Bandeira_de_Mato_Grosso_do_Sul.svg.png" alt="bandeira"> Mato Grosso do Sul <br>
+                        <td>467</td>
+                        <td>16 707 336</td>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Progress_bar_10.svg/35px-Progress_bar_10.svg.png" alt="porcentagem"> 8%</td>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="textocolorblue"><strong>Região Sudeste</strong></th>
+                    <td class="estados textocolorblue">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Bandeira_do_Esp%C3%ADrito_Santo.svg/20px-Bandeira_do_Esp%C3%ADrito_Santo.svg.png" alt="bandeira"> Espírito Santo <br>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bandeira_de_Minas_Gerais.svg/20px-Bandeira_de_Minas_Gerais.svg.png" alt="bandeira"> Minas Gerais <br>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg/20px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png" alt="bandeira"> Rio de Janeiro <br>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/22px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt="bandeira"> São Paulo
+                    </td>
+                    <td>1 668</td>
+                    <td>89 632 912</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Progress_bar_40.svg/35px-Progress_bar_40.svg.png" alt="porcentagem"> 42%</td>
+                </tr>
             <tr>
-                <th><strong>Região</strong></th>
-                <th><strong>Estado</strong></th>
-                <th><strong>Municípios</strong></th>
-                <th><strong>População (2021)</strong></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th><strong>Região Norte</strong></th>
-                <td>
-                    Acre <br>
-                    Amapá <br>
-                    Amazonas <br>
-                    Pará <br>
-                    Rondônia <br>
-                    Roraima <br>
-                    Tocantins 
-                </td>
-                <td>450</td>
-                <td>18 906 962</td>
-            </tr>
-            <tr>
-                <th><strong>Região Nordeste</strong></th>
-                <td>
-                    Alagoas <br>
-                    Bahia <br>
-                    Ceará <br>
-                    Maranhão <br>
-                    Paraíba <br>
-                    Pernambuco <br>
-                    Piauí <br>
-                    Rio Grande do Norte <br>
-                    Sergipe
-                </td>
-                <td>1 793</td>
-                <td>57 667 842</td>
-            </tr>
-            <tr>
-                <th><strong>Região Centro-Oeste</strong></th>
-                <td>
-                    Distrito Federal <br>
-                    Goiás <br>
-                    Mato Grosso <br>
-                    Mato Grosso do Sul <br>
-                </td>
-            </tr>
-            <tr>
-                <th><strong>Região Sudeste</strong></th>
-                <td>
-                    Espírito Santo <br>
-                    Minas Gerais <br>
-                    Rio de Janeiro <br>
-                    São Paulo
-                </td>
-                <td>1 668</td>
-                <td>89 632 912</td>
-            </tr>
-           <tr>
-                <th><strong>Região Sul</strong></th>
-                <td>
-                    Paraná <br>
-                    Santa Catarina <br>
-                    Rio Grande do Sul
-                </td>
-                <td>1 191</td>
-                <td>30 402 587</td>
-           </tr> 
-        </tbody>
-        <tfoot>
-            <tr>
-                <th><strong>Brasil</strong></th>
-                <td>26 e um distrito federal</td>
-                <td>5 570</td>
-                
-            </tr>
-
-        </tfoot>
-    </table>
+                    <th class="textocolorblue"><strong>Região Sul</strong></th>
+                    <td class="estados textocolorblue">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Bandeira_do_Paran%C3%A1.svg/20px-Bandeira_do_Paran%C3%A1.svg.png" alt="bandeira"> Paraná <br>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bandeira_de_Santa_Catarina.svg/20px-Bandeira_de_Santa_Catarina.svg.png" alt="bandeira"> Santa Catarina <br>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Bandeira_do_Rio_Grande_do_Sul.svg/20px-Bandeira_do_Rio_Grande_do_Sul.svg.png" alt="bandeira"> Rio Grande do Sul
+                    </td>
+                    <td>1 191</td>
+                    <td>30 402 587</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Progress_bar_10.svg/35px-Progress_bar_10.svg.png" alt="porcentagem"> 14%</td>
+            </tr> 
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th class="textocolorblue"><strong>Brasil</strong></th>
+                    <td>26 e um distrito federal</td>
+                    <td class="textocolorblue">5 570</td>
+                    <td colspan="2">213 317 639</td>
+                </tr>
+            </tfoot>
+        </table>
+    </article>
 
 
 </body>
