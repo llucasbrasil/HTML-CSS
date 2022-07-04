@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            padding: 20px;
+            text-align: center;
+        }
+        table {
+            width: 200px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid #AAA;
+            text-align: center;
+            padding: 10px;
+        }
+        .normal {
+            background-color: #AAF;
+        }
+        .colspan {
+            background-color: #FAA;
+        }
+        .rowspan {
+            background-color: #AFA;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <table>
+        <tr>
+            <td class="normal">A</td>
+            <td colspan="2" class="colspan">B</td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="rowspan">C</td>
+            <td class="normal">D</td>
+            <td rowspan="2" class="rowspan">F</td>
+        </tr>
+            <td class="normal">E</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="colspan">G</td>
+            <td class="normal">F</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

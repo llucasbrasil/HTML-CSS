@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de tabelas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+        h1 {
+            margin: 20px;
+            text-align: center;
+        }
+        table {
+            width: 300px;
+            height: 300px;
+        }
+        td {
+            border: 1px solid #BBB;
+            text-align: center;
+        }
+        article {
+            display: flex;
+            position: absolute; 
+            left: 50%;
+            top: 20%;
+            transform: translate(-50%,-20%); 
+        }
+        aside {
+            margin: 100px auto;
+            
+        }
+        ul {
+            position: absolute;
+            list-style-position: inside;
+            width: 100%;
+            background-color: #555;
+            padding: 20px;
+        }
+
+        .rowspan {
+            background-color: #AFA;
+        }
+        .colspan {
+            background-color: #FAA;
+        }
+
+        @media (max-width:800px) {
+            article {
+                display: block;
+                top: 15%;
+            }
+            aside {
+                margin: 0 auto;
+            }
+            ul {
+                position: absolute;
+                left: 30%;
+                top: 750px;
+                transform: translate(-30%);
+                background-color: #555;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <article> 
+        <aside>
+            <h1>Tabela 001</h1>
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td rowspan="2" class="rowspan">3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="colspan">8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="rowspan">10</td>
+                    <td colspan="2" class="colspan">11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                </tr>
+            </table>
+        </aside>
+
+        <aside>
+            <h1>Tabela 002</h1>
+            <table>
+                <tr>
+                    <td colspan="4" class="colspan">A</td>
+                    <td rowspan="4" class="rowspan">B</td>
+                </tr>
+                <tr>
+                    <td rowspan="4" class="rowspan">C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I</td>
+                </tr>
+                <tr>
+                    <td>J</td>
+                    <td>L</td>
+                    <td>M</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="colspan">N</td>
+                </tr>
+            </table>
+    </aside>
+
+    <ul>
+        <li style="color:#FAA ;">color red: colspan</li>
+        <li style="color:#AFA ;">color green: rowspan</li>
+    </ul>
+
+</body>
+</html>
