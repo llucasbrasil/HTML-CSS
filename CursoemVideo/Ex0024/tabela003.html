@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    body {
+        height: 3000px;
+        background-color: #111;
+    }
+
+    thead tr th {
+        position: sticky;/*configuraçao para cabecalho ficar fixo*/
+        top: 0;/*deixar cabecalho fixo quando chegar a top 0 */
+        background-color: #333;
+    }
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+        color: #FFF;
+    }
+    table {
+        background-color: #eee;
+        border-collapse: collapse;
+        margin: 30px auto;
+        width: 400px;
+        position: relative; /* configuração para cabeçalho fixo com sticky */
+    }
+    td, th {
+        border: 1px solid #666;
+        padding: 10px;
+
+    }
+    th {
+        letter-spacing: .05em;
+    }
+    caption {
+        color: #fff;
+    }
+
+    .tabeladestaque {
+        background-color: #333;
+        color: #FFF;
+    }
+    .tabelanumeros {
+        text-align: right;
+    }
+    .tabelanomes {
+        text-align: left;
+    }
+
+    tbody > tr:nth-child(2n-1) {
+        background-color: #AAA;
+    }
+
+    
+    </style>
+
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
+
+        <thead>
+            <tr class="tabeladestaque">
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="tabelanumeros">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="tabelanumeros">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="tabelanumeros">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="tabelanumeros">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="tabelanumeros">11 433 957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="tabelanumeros">11 377 239</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="tabelanumeros"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="tabelanumeros"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="tabelanumeros"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="tabelanumeros"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="tabelanumeros"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="tabelanumeros"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="tabelanumeros"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="tabelanumeros"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="tabelanumeros"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="tabelanumeros"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="tabelanumeros"></td>
+            </tr>  
+            <tr>
+                <td></td>
+                <td class="tabelanumeros"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="tabelanumeros"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="tabeladestaque">
+                <th>Total de Habitantes</th>
+                <td class="tabelanumeros">122 037 043</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
