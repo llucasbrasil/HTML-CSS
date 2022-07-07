@@ -1,5 +1,5 @@
 # HTML-CSS
- HTML5 e CSS3 / Exercícios práticos
+ HTML5 e CSS3 / Exercícios dos cursos
 
 Estou aprendendo a criar sites e agora vou gerenciar os meus repositórios!
 
