@@ -7,6 +7,22 @@
     <title>Document</title>
     <style>
 
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        table {
+            margin: auto;
+        }
+        tr td {
+            text-align: center;
+        }
+        #textotabela {
+            width: 100px;
+            padding: 0 20px;
+        }
+
+
         #container {
             background-color: #000;
             background-image: url(imagens/inimigo.jpg);
@@ -40,11 +56,32 @@
 </head>
 <body>
     <h1>Acerte o alvo inimigo</h1>
-    <div id="container">
-        <div id="conteudo"></div>
-    </div>
-
     <h2>Objetivo:</h2>
-    <p>Aponte a mira para o alvo, antes que o mesmo alcance o aliado.</p>
+    <table>
+        <caption>Aponte a mira para o alvo, antes que o mesmo alcance o aliado. Utilizando as imagens abaixo</caption>
+        <tr>
+            <td><img src="imagens/inimigo.jpg" alt="" width="200px" height="200px"></td>
+            <td rowspan="2" id="textotabela">Some essas duas imagens, com a posição correta.</td>
+            <td><img src="imagens/mira.png" alt="" width="200px" height="200px"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Imagem 1</td>
+            <td>Imagem 2</td>
+
+        </tr>
+    </table>
+
+        <h2>Resultado:</h2>
+
+        <div id="container">
+            <div id="conteudo"></div>
+        </div>
+
+            <footer>
+                
+            </footer>
+
+
 </body>
 </html>
