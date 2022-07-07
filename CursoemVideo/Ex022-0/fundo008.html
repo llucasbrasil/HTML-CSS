@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #container {
+            background-color: #000;
+            background-image: url(imagens/inimigo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 500px;
+            width: 800px;
+            margin: auto;
+            border-bottom: 3px solid #060;
+            
+            position: relative;
+
+        }
+        #conteudo {
+            background-color: #AAA0;
+            background-image: url(imagens/mira.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+            width: 200px;
+
+            position: absolute;
+            top: 60%;
+            left: 20%;
+
+            transform: translate(-20%,-60%);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Acerte o alvo inimigo</h1>
+    <div id="container">
+        <div id="conteudo"></div>
+    </div>
+
+    <h2>Objetivo:</h2>
+    <p>Aponte a mira para o alvo, antes que o mesmo alcance o aliado.</p>
+</body>
+</html>
