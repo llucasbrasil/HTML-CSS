@@ -70,9 +70,8 @@ header.cabecalho > p {
 
 /*===============>>CORPO<<================*/
 section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    line-height: 2em;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
     padding-left: 30px;
     font: 2.8vw var(--font-second);
 }
@@ -83,6 +82,7 @@ section {
 }
 section > p {
     padding-bottom: 2em;
+    line-height: 3em;
 }
 
 section.normal { 
