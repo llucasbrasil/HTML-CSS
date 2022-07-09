@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando iFrame</title>
+
+    <style>
+
+        iframe {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Testando o uso de um ifreme</h1>
+
+    <p>Acessando o site do 
+        <!-- 
+            Tamanho padrão do iframe = 300x150
+
+            frameborder="0", para retirar a borda padrão, e se for fazer alguma alteração. Modificar pelo .css no iframe
+
+            scolling="no", para retirar ou modificar o scroll da janela.
+            opções: auto, yes ou no
+        
+        -->
+        <iframe src="https://www.cursoemvideo.com/cursos/" frameborder="0" scolling="yes">
+            <a href="https://www.cursoemvideo.com/cursos/" target="_blank">Curso em Vídeo</a>
+        </iframe>
+    para aprender a programar.</p>
+
+
+    <p>
+        O site do
+        <iframe src="https://google.com.br" frameborder="0"></iframe>
+        também é muito legal, pena que não funciona dentro do iframe</p>
+    
+</body>
+</html>
