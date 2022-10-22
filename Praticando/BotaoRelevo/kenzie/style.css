@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@100 & display=swap');
+/* tipografia */
+.title {
+font-family: Arial, Helvetica, sans-serif;
+}
+.title.one {
+    font-size: 60px;
+    font-weight: 700;
+}
+.title.two {
+    font-size: 60px;
+    font-weight: 700;
+}
+.title.threehalf {
+    font-size: 28px;
+    font-weight: 700;
+}
+.title.three {
+    font-size: 24px;
+    font-weight: 600;
+}
+.title.four {
+    font-size: 16px;
+    font-weight: 600;
+}
+.content-box p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}
+
+/* botao */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: blue;
+    color: #fff;
+    border-radius: 255px;
+    height: 60px;
+    width: 300px;
+}
+.btn.solid
