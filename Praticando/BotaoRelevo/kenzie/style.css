@@ -1,10 +1,60 @@
-@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@100 & display=swap');
-/* tipografia */
-.title {
-font-family: Arial, Helvetica, sans-serif;
+/* Body */
+body {
+    background-color: #01011c;
 }
+/* Global Spacing */
+.pad10-top {
+    padding-top: 10px;
+}
+.pad20-top {
+    padding-top: 20px;
+}
+.pad30-top {
+    padding-top: 30px;
+}
+.pad10-bottom {
+    padding-bottom: 10px;
+}
+.pad20-bottom {
+    padding-bottom: 20px;
+}
+.pad30-bottom {
+    padding-bottom: 30px;
+}
+
+/* Header */
+#cabacalho {
+    background-color: #01011c;
+}
+#cabecalho .menu ul a {
+    font: 19px Poppins;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+}
+#cabecalho .flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#cabecalho .flex-box nav {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+#cabecalho .flex-box .logo img {
+    max-width: 170px;
+}
+
+/* TIPOGRAFIA */
+.title {
+    font-family: Poppins;
+    line-height: 1.2;
+    color: #fff;
+}
+
 .title.one {
-    font-size: 60px;
+    font-size: 90px;
     font-weight: 700;
 }
 .title.two {
@@ -23,23 +73,83 @@ font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 600;
 }
-.content-box p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 19px;
+.content-box p {
+    font: 19px Poppins;
+    font-weight: 400;
+    color: #fff;
+}
+#blue-text {
+ color: #0000ff;
 }
 
-/* botao */
+/* Botões */
 .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Poppins;
     font-size: 18px;
     font-weight: 700;
-    background-color: blue;
-    color: #fff;
-    border-radius: 255px;
-    height: 60px;
     width: 300px;
+    height: 60px;
+    border-radius: 255px;
+    transition: 0.4s;
 }
-.btn.solid
+
+.btn.solid {
+    background-color: #0000ff;
+    color: #fff;
+    border: 2px solid #0000ff;
+}
+.btn.solid:hover {
+    background-color: #4444ff;
+    border-color: #4444ff;
+}
+.btn.outline {
+    background-color: transparent;
+    color: #a5a5ff;
+    border: 2px solid #a5a5ff;
+}
+.btn.outline:hover {
+    background-color: #a5a5ff;
+    color: #fff;
+}
+
+/* Grid */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Seções */
+#principal{
+    padding: 50px 0;
+
+
+}
+#principal .flex-box {
+    display: flex;
+    align-items: center;
+    gap: ;
+}
+#sobre {
+    padding: 50px 0;
+
+}
+
+#sobre .flex-box {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+}
+
+#sobre .flex-box .left,
+#sobre .flex-box .right {
+    width: 100%;
+}
+
+#sobre .flex-box .left img {
+    width: 100%;
+}

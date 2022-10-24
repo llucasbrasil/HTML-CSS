@@ -5,56 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <title>Carrinho</title>
 </head>
 <body>
     <header>
-        <a href="index.html">
-            <img src="assets/LogoKenzieFestival.png" alt="Logo Kenzie Festival">
-        </a>        
+        <a href="index.html"><img src="assets/LogoKenzieFestival.png" alt="Logo da Kenzie"></a>
         <nav>
             <ul>
-                <li>
-                    <a href="index.html#sobre">
-                        Sobre
-                    </a>
-                </li>
+                <li><a href="index.html#sobre">Sobre</a></li>
             </ul>
-            <a href="carrinho.html">
-                Quero o meu ingresso!
-            </a>
-            <button>
-                <img src="assets/Vector.png" alt="Modo diurno">
-            </button>
+            <a href="carrinho.html" class="btn outline">Quero o meu ingresso!</a>
+            <button><img src="assets/Vector.png" alt="Figura de uma engrenagem"></button>
         </nav>
     </header>
-
     <section id="carrinho">
-        <h1 class="tible two">Finalizar a compra</h1>
-
+        <h1 class="title two">Finalizar a compra</h1>
         <ul>
-            <li>
-                <h3 class="title four">Ingresso para o Kenzie Music Festival</h3>
+            <li><h3 class="title four">Ingresso para o Kenzie Music Festival</h3></li>
+            <div>
                 <div>
-                    <div>
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
-                    <p class="title three">R$ 90,00 por pessoa</p>
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
                 </div>
-            </li>
+                <p class="title three">R$90,00 por pessoa</p>
+            </div>
         </ul>
 
         <div>
-            <h2>Preencha os campos</h2>
-            <form>
-                <input type="text" name="nome" id="nome" placeholder="Seu nome">
-                <input type="email" name="email" id="email" placeholder="Seu e-mail">
-                <button type="submit">Finalizar comprar</button>
+            <h2 class="title four">Preencha os campos</h2>
+            <form action="">
+                <label for="inome"></label>
+                    <input type="text" name="name" id="inome" placeholder="Seu nome">
+                <label for="iemail"></label>
+                    <input type="email" name="emial" id="imail" placeholder="Seu e-mail">
+                <button type="submit" class="btn solid">Finalizar a compra</button>
             </form>
         </div>
-
     </section>
 </body>
 </html>
