@@ -73,13 +73,20 @@ body {
     font-size: 16px;
     font-weight: 600;
 }
+.title.center {
+    text-align: center;
+}
+
 .content-box p {
     font: 19px Poppins;
     font-weight: 400;
     color: #fff;
 }
 #blue-text {
- color: #0000ff;
+    color: #0000ff;
+}
+.lightblue-text {
+    color: #A5A5FF;
 }
 
 /* Botões */
@@ -107,17 +114,18 @@ body {
 }
 .btn.outline {
     background-color: transparent;
-    color: #a5a5ff;
-    border: 2px solid #a5a5ff;
+    color: #A5A5FF;
+    border: 2px solid #A5A5FF;
 }
 .btn.outline:hover {
-    background-color: #a5a5ff;
+    background-color: #A5A5FF;
     color: #fff;
 }
 
 /* Grid */
 
 .container {
+    padding: 10px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -126,17 +134,13 @@ body {
 /* Seções */
 #principal{
     padding: 50px 0;
-
-
 }
 #principal .flex-box {
     display: flex;
     align-items: center;
-    gap: ;
 }
 #sobre {
     padding: 50px 0;
-
 }
 
 #sobre .flex-box {
@@ -152,4 +156,50 @@ body {
 
 #sobre .flex-box .left img {
     width: 100%;
+}
+
+#artistas {
+    padding: 50px 0;
+}
+#artistas .artists-list {
+    display: flex;
+    gap: 15px;
+}
+#finalizacao {
+    padding: 50px 0;
+
+}
+
+#finalizacao .flex-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#finalizacao .flex-box .ticket {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 370px;
+    min-width: 600px;
+    border: 1px solid #00F;
+    border-left-width: 100px;
+    padding: 40px;
+}
+#finalizacao .flex-box .ticket img {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+#finalizacao .flex-box .ticket .quantity-box {
+    margin-top: 35px;
+    border: 1px solid #fff;
+    width: 465px;
+    height: 90px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
 }
