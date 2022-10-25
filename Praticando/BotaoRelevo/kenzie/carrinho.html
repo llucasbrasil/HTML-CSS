@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Carrinho</title>
 </head>
 <body>
@@ -27,28 +27,38 @@
         </div>
     </header>
     <section id="carrinho">
-        <h1 class="title two">Finalizar a compra</h1>
-        <ul>
-            <li><h3 class="title four">Ingresso para o Kenzie Music Festival</h3></li>
-            <div>
-                <div>
-                    <button>-</button>
-                    <span>1</span>
-                    <button>+</button>
+        <div class="container"> 
+            <h1 class="title two pad30-bottom">Finalizar a compraz</h1>
+            <div class="flex-box">
+                <div class="left">
+                    
+                    <ul class="ticket-list">
+                        <li class="ticket">
+                            <h3 class="title five">Ingresso para o Kenzie Music Festival</h3>
+                            <div>
+                                <div class="controls">
+                                    <button>-</button>
+                                    <span>1</span>
+                                    <button>+</button>
+                                </div>
+                                <p class="title three">R$ 90,00 por pessoa</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <p class="title three">R$90,00 por pessoa</p>
+                <div class="right">
+                    <div>
+                        <h2 class="title four">Preencha os campos</h2>
+                        <form action="" class="form">
+                            <label for="inome"></label>
+                                <input type="text" name="name" id="inome" placeholder="Seu nome">
+                            <label for="iemail"></label>
+                                <input type="email" name="emial" id="imail" placeholder="Seu e-mail">
+                            <button type="submit" class="btn solid">Finalizar a compra</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </ul>
-
-        <div>
-            <h2 class="title four">Preencha os campos</h2>
-            <form action="">
-                <label for="inome"></label>
-                    <input type="text" name="name" id="inome" placeholder="Seu nome">
-                <label for="iemail"></label>
-                    <input type="email" name="emial" id="imail" placeholder="Seu e-mail">
-                <button type="submit" class="btn solid">Finalizar a compra</button>
-            </form>
         </div>
     </section>
 </body>

@@ -73,6 +73,10 @@ body {
     font-size: 16px;
     font-weight: 600;
 }
+.title.five {
+    font-size: 19px;
+    font-weight: 600;
+}
 .title.center {
     text-align: center;
 }
@@ -202,4 +206,78 @@ body {
     align-items: center;
     justify-content: center;
 
+}
+
+#carrinho {
+    padding: 50px 0;
+}
+#carrinho .flex-box {
+    display: flex;
+    gap: 40px;
+}
+#carrinho .flex-box .left,
+#carrinho .flex-box .right {
+    width: 100%;
+}
+#carrinho .flex-box .right {
+    max-width: 300px;
+}
+#carrinho .flex-box .right button {
+    margin-top: 30px ;
+}#carrinho .flex-box .right h2 {
+    margin-bottom: 15px;
+}
+
+
+#carrinho .flex-box .ticket-list .ticket {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    border: 1px solid #A5A5FF;
+    border-radius: 20px;
+    width: 800px;
+    height: 190px;
+} 
+/* #carrinho .flex-box .ticket-list .ticket price {
+    display: flex;
+} */
+#carrinho .flex-box .ticket-list .ticket .controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#carrinho .flex-box .ticket-list .ticket .controls button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 29px;
+    height: 29px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    font: 17px Poppins;
+}
+
+#carrinho .flex-box .ticket-list .ticket .controls span {
+    font: 19px Poppins;
+    font-weight: 700;
+    color: #A5A5FF;
+}
+#carrinho .flex-box .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#carrinho .flex-box .form input {
+    background-color: transparent;
+    width: 300px;
+    height: 50px;
+    padding: 0 20px;
+    border: 1px solid #A5A5FF;
+    border-radius: 255px;
+    font: 16px Poppins;
+    font-weight: 400;
 }
