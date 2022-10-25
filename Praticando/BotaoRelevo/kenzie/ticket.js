@@ -1,3 +1,4 @@
+
 const nome = window.localStorage.getItem('nome')
 const email = window.localStorage.getItem('email')
 const quantityTickets = window.localStorage.getItem('quantityTickets')
