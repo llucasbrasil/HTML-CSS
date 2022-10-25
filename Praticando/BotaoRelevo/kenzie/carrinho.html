@@ -31,17 +31,16 @@
             <h1 class="title two pad30-bottom">Finalizar a compraz</h1>
             <div class="flex-box">
                 <div class="left">
-                    
                     <ul class="ticket-list">
                         <li class="ticket">
                             <h3 class="title five">Ingresso para o Kenzie Music Festival</h3>
                             <div>
                                 <div class="controls">
-                                    <button>-</button>
-                                    <span>1</span>
-                                    <button>+</button>
+                                    <button id="remove-ticket">-</button>
+                                    <span id="ticket">1</span>
+                                    <button id="add-ticket">+</button>
                                 </div>
-                                <p class="title three">R$ 90,00 por pessoa</p>
+                                <p class="title three">R$ <span id="ticket-price">90</span>,00 por pessoa</p>
                             </div>
                         </li>
                     </ul>
@@ -49,17 +48,19 @@
                 <div class="right">
                     <div>
                         <h2 class="title four">Preencha os campos</h2>
-                        <form action="" class="form">
-                            <label for="inome"></label>
+                        <form action="" class="form" id="cart-form">
+                            <!-- <label for="inome"></label> -->
                                 <input type="text" name="name" id="inome" placeholder="Seu nome">
-                            <label for="iemail"></label>
-                                <input type="email" name="emial" id="imail" placeholder="Seu e-mail">
-                            <button type="submit" class="btn solid">Finalizar a compra</button>
+                            <!-- <label for="iemail"></label> -->
+                                <input type="email" name="email" id="iemail" placeholder="Seu e-mail">
+                            <button type="submit" id="buy-button" class="btn solid">Finalizar a compra</button>
                         </form>
                     </div>
                 </div>
             </div>
+            <p class="title six">* Limite de 5 ingressos por pessoa</p>
         </div>
     </section>
 </body>
+<script src="script.js"></script>
 </html>

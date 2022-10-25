@@ -77,6 +77,10 @@ body {
     font-size: 19px;
     font-weight: 600;
 }
+.title.six {
+    font-size: 13px;
+    font-weight: 100;
+}
 .title.center {
     text-align: center;
 }
@@ -280,4 +284,5 @@ body {
     border-radius: 255px;
     font: 16px Poppins;
     font-weight: 400;
+    color: #fff;
 }
